@@ -46,6 +46,20 @@
             .contact-item a:hover {
                 text-decoration: underline;
             }
+            /* Flexbox for images in software section */
+            .software-images {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 5px;
+                margin-bottom: 100px;
+            }
+            .software-images img {
+                width: 400px; /* Set the desired width */
+                height: auto; /* Maintain aspect ratio */
+                margin: 0 30px; /* Space between images */
+            }
+
         </style>
         <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     </head>
@@ -83,15 +97,21 @@
                 <!-- Featured Post -->
                 <article class="post featured">
                     <header class="major">
-                        <h2 style="text-align:center;">Deliverables:</h2>
-                        <p>arc-flash labels to nfpa 70e standards</p>
-                        <p>arc-flash reports</p>
-                        <p>AS-BUILT drawings (Autocad) of the electrical system if desired</p>
+                        <h2 style="text-align:center;">Services</h2>
+                        <p><strong>Arc-Flash Study</strong> – is crucial for increasing awareness of arc-flash hazards within a facility. By identifying and mitigating arc-flash risks, the study ensures better protection for equipment and significantly boosts personnel safety. Additionally, performing an arc-Flash Study ensures compliance with key regulatory requirements, including NEC Article 110.16, NFPA 70E, and OSHA standards.</p>
+                        <p><strong>Short-Circuit Study</strong> – is essential for identifying underrated equipment before extensive system damage occurs.<p>
+                        <p><strong>Coordination Study</strong> – is used to enhance equipment protection and ensuring that protective devices trip in the correct sequence. This coordination increases facility reliability by confining the impact of disturbances, such as faults or overloads, to smaller areas of the distribution system.<P>
+                        <p><strong>Arc Flash Safety Training (NFPA 70E)</strong> – onsite course provides a comprehensive overview of the hazards associated with working on or near electrical conductors and equipment. The course places special emphasis on arc flash hazards and outlines the regulatory requirements for protecting employees from these dangers.<P> 
+                        <p><strong>Power Factor Correction</strong> – can help reduce your electric bill by identifying the optimal location and size of power factor correction capacitors.<P>   
                         <img src="images/arcflashlabel.jpg" style="width:600px;height:400px;">
                         <p>   </p>
-                        <h2 style="text-align:center;">Software:</h2>
-                        <p>We have experience in using both SKM and Easypower to perform power system studies</p>
-                        <h2>About Us:</h2>
+                        <h2 style="text-align:center;">Software</h2>
+                        <p>Phase engineering has experience in using both SKM and Easypower. A model of the customers’ electrical system is made using either SKM or Easypower which then is used to generate short-circuit, coordination, and arc-flash reports. We have found Easypower to be more stable than SKM but their reports require more formatting. SKM has been around for longer, so they are an industry standard, but here at phase engineering we can use both tools. The model of the electrical system made in SKM or Easypower is easily transferable to the customer for future use.</p>
+                        <div class="software-images">
+                            <img src="images/SKM_logo.jpeg" alt="SKM Logo">
+                            <img src="images/easypower_logo.png" alt="Easypower Logo">
+                        </div>
+                        <h2>About Us</h2>
                         <p style="text-align:left;">Our team consists of two professional electrical engineers who bring a collective experience of 12 years, specializing in arc-flash studies. Our portfolio includes numerous successful projects in industrial plants, data centers, and government buildings. We handle every aspect of the project, from on-site data collection to report generation and equipment labeling.
                         </p>
                     </header>
@@ -136,5 +156,15 @@
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
+        <div id="navPanel">
+            <nav>
+                <ul class="links">
+                    <li class="active"><a href="index.html">Qualifications</a></li>
+                    <li><a href="generic.html">Arc-Flash</a></li>
+                    <li><a href="elements.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#navPanel" class="close" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></a>
+        </div>
     </body>
 </html>
