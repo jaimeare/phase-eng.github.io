@@ -59,7 +59,14 @@
                 height: auto; /* Maintain aspect ratio */
                 margin: 0 30px; /* Space between images */
             }
-
+            .responsive-logo {
+    max-width: 100%; /* Ensures the logo scales down to fit the container */
+    height: auto;    /* Maintains the aspect ratio */
+    display: block;  /* Ensures proper alignment */
+    margin: 0 auto;  /* Centers the logo horizontally */
+    padding-bottom: 40px; /* Keeps the existing padding */
+    border: none;    /* Removes any border */
+            }
         </style>
         <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     </head>
@@ -70,8 +77,7 @@
 
             <!-- Intro -->
             <div id="intro" class="">
-                <img src="images/Color logo - no background.svg" style="padding-bottom: 40px; display: block; border: none;">
-                <p>We provide arc-flash risk assessment, mitigation, and training services to government and commercial organizations.</p>
+                <img src="images/Color logo - no background.svg" class="responsive-logo" alt="Phase Engineering Logo">                <p>We provide arc-flash risk assessment, mitigation, and training services to government and commercial organizations.</p>
                 <ul class="actions">
                     <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
                 </ul>
