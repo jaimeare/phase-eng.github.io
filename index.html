@@ -11,38 +11,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="assets/css/main.css" />
         <style>
-                /* Fix the gap above the logo */
-    #intro {
-        padding-top: 20px; /* Reduce padding for smaller screens */
-    }
-
-            /* Ensure the logo scales properly */
-            .responsive-logo {
-                max-width: 80%; /* Adjust width for smaller screens */
-                height: auto; /* Maintain aspect ratio */
-                margin: 0 auto; /* Center the logo */
-                display: block;
-            }
-
-            /* Adjust image scaling for smaller screens */
-            .software-images img {
-                width: 100%; /* Make images responsive */
-                max-width: 300px; /* Set a maximum width */
-                height: auto; /* Maintain aspect ratio */
-                margin: 10px; /* Add spacing between images */
-            }
-
-            /* Add media query for smartphones */
-            @media (max-width: 768px) {
-                #intro {
-                    padding-top: 10px; /* Further reduce padding for very small screens */
-                }
-
-                .software-images img {
-                    max-width: 200px; /* Reduce image size further for small screens */
-                }
-            }
-            
             /* Additional CSS to style the contact section */
             .contact-info {
                 display: flex;
@@ -87,16 +55,25 @@
                 margin-bottom: 100px;
             }
             .software-images img {
-                width: 400px; /* Set the desired width */
+                width: 50%; /* Set the desired width */
                 height: auto; /* Maintain aspect ratio */
-                margin: 0 30px; /* Space between images */
+                margin: 5%; /* Space between images */
             }
             .responsive-logo {
     max-width: 100%; /* Ensures the logo scales down to fit the container */
     height: auto;    /* Maintains the aspect ratio */
     display: block;  /* Ensures proper alignment */
     margin: 0 auto;  /* Centers the logo horizontally */
-    padding-bottom: 40px; /* Keeps the existing padding */
+    padding-bottom: auto; /* Keeps the existing padding */
+    border: none;    /* Removes any border */
+            }
+
+            .responsive-af {
+    max-width: 70%; /* Ensures the logo scales down to fit the container */
+    height: auto;    /* Maintains the aspect ratio */
+    display: block;  /* Ensures proper alignment */
+    margin: 0 auto;  /* Centers the logo horizontally */
+    padding-bottom: auto; /* Keeps the existing padding */
     border: none;    /* Removes any border */
             }
         </style>
@@ -109,7 +86,8 @@
 
             <!-- Intro -->
             <div id="intro" class="">
-                <img src="images/Color logo - no background.svg" class="responsive-logo" alt="Phase Engineering Logo">                <p>We provide arc-flash risk assessment, mitigation, and training services to government and commercial organizations.</p>
+                <img src="images/Color logo - no background.svg" class="responsive-logo" alt="Phase Engineering Logo">                
+                <p>We provide arc-flash risk assessment, mitigation, and training services to government and commercial organizations.</p>
                 <ul class="actions">
                     <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
                 </ul>
@@ -141,7 +119,7 @@
                         <p><strong>Coordination Study</strong> – is used to enhance equipment protection and ensuring that protective devices trip in the correct sequence. This coordination increases facility reliability by confining the impact of disturbances, such as faults or overloads, to smaller areas of the distribution system.<P>
                         <p><strong>Arc Flash Safety Training (NFPA 70E)</strong> – onsite course provides a comprehensive overview of the hazards associated with working on or near electrical conductors and equipment. The course places special emphasis on arc flash hazards and outlines the regulatory requirements for protecting employees from these dangers.<P> 
                         <p><strong>Power Factor Correction</strong> – can help reduce your electric bill by identifying the optimal location and size of power factor correction capacitors.<P>   
-                        <img src="images/arcflashlabel.jpg" style="width:600px;height:400px;">
+                        <img src="images/arcflashlabel.jpg" class="responsive-af">
                         <p>   </p>
                         <h2 style="text-align:center;">Software</h2>
                         <p>Phase engineering has experience in using both SKM and Easypower. A model of the customers’ electrical system is made using either SKM or Easypower which then is used to generate short-circuit, coordination, and arc-flash reports. We have found Easypower to be more stable than SKM but their reports require more formatting. SKM has been around for longer, so they are an industry standard, but here at phase engineering we can use both tools. The model of the electrical system made in SKM or Easypower is easily transferable to the customer for future use.</p>
