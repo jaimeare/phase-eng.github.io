@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://phase-eng.com/sitemap.xml
