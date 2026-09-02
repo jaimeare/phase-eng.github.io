@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Arc Flash Study Process: Step by Step | Phase Engineering</title>
+	<meta name="description" content="How an arc flash study is performed, step by step: data collection, modeling, short circuit, coordination, IEEE 1584 incident energy, labels and sealed report. What each stage requires and how long it takes." />
+	<link rel="canonical" href="https://phase-eng.com/arc-flash-study-process/" />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="Phase Engineering" />
+	<meta property="og:title" content="Arc Flash Study Process: Step by Step | Phase Engineering" />
+	<meta property="og:description" content="How an arc flash study is performed, step by step: data collection, modeling, short circuit, coordination, IEEE 1584 incident energy, labels and sealed report. What each stage requires and how long it takes." />
+	<meta property="og:url" content="https://phase-eng.com/arc-flash-study-process/" />
+	<meta property="og:image" content="https://phase-eng.com/images/arc_flash_label.jpg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="theme-color" content="#1b1f22" />
+	<link rel="icon" href="/favicon.ico" sizes="any" />
+	<link rel="icon" href="/favicon.png" type="image/png" sizes="192x192" />
+	<link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
+	<link rel="apple-touch-icon" href="/favicon.png" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="stylesheet" href="../assets/css/pages.css" />
+	<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "ProfessionalService",
+ "@id": "https://phase-eng.com/#org",
+ "name": "Phase Engineering",
+ "url": "https://phase-eng.com/",
+ "logo": "https://phase-eng.com/images/logo.svg",
+ "image": "https://phase-eng.com/images/arc_flash_label.jpg",
+ "telephone": "+1-559-942-8825",
+ "email": "projects@phase-eng.com",
+ "priceRange": "$$",
+ "description": "California licensed Professional Engineers providing arc flash studies, short circuit analysis, protective device coordination studies, NFPA 70E training and electrical design.",
+ "address": {
+  "@type": "PostalAddress",
+  "addressLocality": "Visalia",
+  "addressRegion": "CA",
+  "postalCode": "93277",
+  "addressCountry": "US"
+ },
+ "areaServed": [
+  {
+   "@type": "City",
+   "name": "Visalia"
+  },
+  {
+   "@type": "City",
+   "name": "Fresno"
+  },
+  {
+   "@type": "City",
+   "name": "Bakersfield"
+  },
+  {
+   "@type": "City",
+   "name": "Tulare"
+  },
+  {
+   "@type": "City",
+   "name": "Hanford"
+  },
+  {
+   "@type": "City",
+   "name": "Porterville"
+  },
+  {
+   "@type": "City",
+   "name": "Madera"
+  },
+  {
+   "@type": "City",
+   "name": "Merced"
+  },
+  {
+   "@type": "City",
+   "name": "Modesto"
+  },
+  {
+   "@type": "City",
+   "name": "Stockton"
+  },
+  {
+   "@type": "City",
+   "name": "Sacramento"
+  },
+  {
+   "@type": "City",
+   "name": "Salinas"
+  },
+  {
+   "@type": "City",
+   "name": "Santa Maria"
+  },
+  {
+   "@type": "City",
+   "name": "Ontario"
+  },
+  {
+   "@type": "City",
+   "name": "Los Angeles"
+  }
+ ],
+ "knowsAbout": [
+  "Arc flash study",
+  "NFPA 70E",
+  "Incident energy analysis",
+  "Short circuit study",
+  "Protective device coordination",
+  "OSHA 1910.333",
+  "NEC 110.16",
+  "Division 26 05 73"
+ ],
+ "founder": [
+  {
+   "@type": "Person",
+   "name": "Jaime Arellano",
+   "jobTitle": "Professional Engineer (P.E.)"
+  },
+  {
+   "@type": "Person",
+   "name": "Hugo Rodriguez",
+   "jobTitle": "Professional Engineer (P.E.)"
+  }
+ ]
+}</script>
+	<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "Service",
+ "serviceType": "Arc Flash Study",
+ "name": "Arc Flash Study in Fresno, California",
+ "url": "https://phase-eng.com/arc-flash-study-process/",
+ "provider": {
+  "@id": "https://phase-eng.com/#org"
+ },
+ "areaServed": {
+  "@type": "City",
+  "name": "Fresno",
+  "containedInPlace": {
+   "@type": "State",
+   "name": "California"
+  }
+ }
+}</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "What does a complete arc flash study include?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "A complete arc flash study has six stages: (1) data collection, either field data gathered on site or equipment submittals on new construction; (2) creation or reconciliation of the single-line diagram; (3) a short circuit study calculating available fault current at every bus and evaluating equipment interrupting ratings; (4) a protective device coordination study producing time current curve plots for every device path; (5) incident energy analysis per IEEE 1584, establishing incident energy, arc flash boundary and required PPE at each location; and (6) arc flash labels printed and installed, with the report sealed by a licensed Professional Engineer."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "How long does an arc flash study take?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "On new construction, a small project can be turned around in about one week, because the study is built from equipment submittals and no site visit is required. Existing facilities take longer, since field data collection has to be scheduled around production and the amount of usable existing documentation varies."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Is NFPA 70E enforced by OSHA?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No. NFPA 70E is a consensus standard, not an OSHA regulation, so it is not enforced directly by federal law. OSHA enforces 29 CFR 1910.132(d), requiring the employer to assess the workplace for hazards and determine whether PPE is necessary, and 29 CFR 1910.335(a)(1)(i), requiring appropriate electrical protective equipment where electrical hazards are present. OSHA accepts NFPA 70E as the nationally recognized consensus standard for how that assessment is performed."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Do you need a site visit for an arc flash study?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "For an existing facility, yes. Nameplate data, protective device settings, conductor sizes and lengths, and actual system topology have to be verified in the field, because drawings are frequently out of date. For new construction the study is built from equipment submittals, so no site visit is required."
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body class="page">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+	<div class="bar">
+		<a class="brand" href="/"><img src="../images/logo.svg" alt="Phase Engineering" /><span>Phase Engineering</span></a>
+		<nav class="site-nav" aria-label="Main">
+			<ul>
+				<li><a href="/services/arc-flash-study/" aria-current="page">Arc Flash</a></li>
+				<li><a href="/services/">Services</a></li>
+				<li><a href="/projects/">Projects</a></li>
+				<li><a href="/about/">About</a></li>
+				<li><a href="/contact/">Contact</a></li>
+			</ul>
+		</nav>
+		<a class="call-cta" href="tel:+15599428825">Call (559) 942-8825</a>
+	</div>
+</header>
+<nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a> / Arc flash study process</nav>
+<div class="page-hero">
+	<span class="eyebrow">How the work is actually done</span>
+	<h1>The Arc Flash Study Process, Step by Step</h1>
+	<p class="lede">Six stages from kickoff to installed labels &mdash; what each one requires from you, what can go wrong in it, and how long the whole thing takes.</p>
+</div>
+<main class="page-body" id="main">
+<div class="prose">
+
+<p>An arc flash study is not one calculation. It is a sequence, and each stage depends on the one
+before it. Understanding the sequence is the easiest way to tell a thorough study from a fast one,
+and to know what you are being quoted.</p>
+
+<h2>The six stages</h2>
+
+<h3>1. Data collection</h3>
+<p>Everything downstream is built on this, and it is where most studies go wrong. What gets
+gathered: utility available fault current at the service point, transformer nameplate data and
+impedances, conductor sizes, types and lengths, protective device manufacturers, types, ratings and
+<em>as-found settings</em>, and the actual topology of the system rather than the drawn one.</p>
+<p>On an existing facility this has to happen in the field. Drawings are routinely out of date,
+breakers have been replaced with whatever was available, and settings have been adjusted by people
+who are no longer there. On new construction there is nothing to walk, so the study is built from
+equipment submittals instead.</p>
+<p><strong>We send a licensed P.E. to collect this data</strong>, with an electrician as support to
+open panel covers. Missing conductor lengths and unrecorded breaker settings go straight into the
+incident energy result, and the engineer who has to defend the model is the one who should gather
+its inputs.</p>
+
+<h3>2. Single-line diagram</h3>
+<p>The collected data becomes a single-line diagram, either created from scratch or reconciled
+against what you already have. If your existing drawing disagrees with the field data, the field
+data wins and the drawing gets corrected. You keep the updated single-line, which for many
+facilities is worth as much as the study.</p>
+
+<h3>3. Short circuit study</h3>
+<p>Available fault current is calculated at every bus and compared against the interrupting rating
+of the equipment installed there. This is where underrated equipment surfaces &mdash; a breaker
+applied above its interrupting rating is a safety problem independent of arc flash, and it is
+cheaper to find on paper than during a fault. Also produces the maximum available fault current
+required by NEC 110.24 to be field marked on service equipment.</p>
+
+<h3>4. Coordination study</h3>
+<p>Protective devices are plotted on time current curves so that a fault clears at the device
+closest to it rather than tripping something upstream and taking out half the plant. Coordination
+also directly affects incident energy: how fast a device clears determines how long the arc burns,
+and duration drives the energy released.</p>
+<p>Ask any firm whether every panel appears in the TCC plots or only the main gear. This is the
+stage most commonly cut short.</p>
+
+<h3>5. Incident energy analysis</h3>
+<p>Using IEEE 1584 methodology, incident energy in cal/cm&sup2; is calculated at each working
+location, along with the arc flash boundary and the PPE required. This is the output people think
+of as "the arc flash study," and it is entirely dependent on stages one through four being right.</p>
+
+<h3>6. Labels, report, and seal</h3>
+<p>Labels meeting NFPA 70E and NEC 110.16 are printed and installed on the correct equipment, with
+location-matched identifiers and the values calculated for that specific gear. The report is sealed
+by a California licensed Professional Engineer. You also receive the model itself, so future
+changes can be evaluated without rebuilding it from scratch.</p>
+
+<h2>How long it takes</h2>
+<p><strong>New construction:</strong> a small project can be turned around in about one week. There
+is no site visit, because the study is built from equipment submittals &mdash; which is also why
+sequencing matters. Where Division 26 05 73 is in the specifications, the study is required before
+equipment is ordered.</p>
+<p><strong>Existing facilities:</strong> longer, and honestly variable. The schedule is driven by
+field data collection, which has to be planned around production, and by how much of your existing
+documentation turns out to be usable. A plant with current drawings and accessible panels moves
+quickly. One with drawings from three owners ago does not.</p>
+
+<h2>Is NFPA 70E enforced by OSHA?</h2>
+<p>No &mdash; and this gets stated incorrectly often enough to be worth being precise about. NFPA
+70E is a consensus standard, not an OSHA regulation, so it is not enforced directly by federal
+law.</p>
+<p>What OSHA enforces is <strong>29 CFR 1910.132(d)</strong>, requiring the employer to assess the
+workplace for hazards and determine whether PPE is necessary, and <strong>29 CFR
+1910.335(a)(1)(i)</strong>, requiring that employees working where electrical hazards are present
+be provided with and use appropriate electrical protective equipment. OSHA accepts NFPA 70E as the
+nationally recognized consensus standard describing how that assessment is performed.</p>
+<p>So the obligation is real and enforceable. NFPA 70E is the recognized method for meeting it, and
+the arc flash study is the documentation that you did.</p>
+
+<div class="code-ref">
+	<span class="ref-id">NFPA 70E Section 130.5</span>
+	<p>The arc flash risk assessment must be reviewed at intervals not exceeding five years, and
+	sooner whenever a change to the electrical distribution system could affect the results.</p>
+</div>
+
+<h2>Who performs the study</h2>
+<p>Worth asking directly, because the answer varies more than people expect. Some firms are
+electrical contractors who broker the engineering to a subcontracted P.E. Some send technicians to
+collect data and have an engineer review it afterward.</p>
+<p>At Phase Engineering the engineer who seals the report is the engineer who walked your plant.
+That is not a workflow preference. Incident energy results are only as good as the field data
+behind them, and the person accountable for the number should be the person who recorded the
+inputs.</p>
+
+<p><a href="/services/arc-flash-study/">Arc flash study details and pricing discussion &rarr;</a></p>
+
+</div>
+<section class="cta-band">
+	<h2>Talk to the engineer who does the work</h2>
+	<p>No sales team. You speak directly with a California licensed Professional Engineer about your equipment, your schedule, and what the study will actually cost.</p>
+	<div class="cta-actions">
+		<a class="btn primary" href="tel:+15599428825">Call (559) 942-8825</a>
+		<a class="btn" href="mailto:projects@phase-eng.com">Email projects@phase-eng.com</a>
+	</div>
+</section>
+</main>
+<footer class="site-footer">
+	<div class="cols">
+		<div>
+			<h2>Phase Engineering</h2>
+			<p>Electrical engineering and arc flash studies, sealed by California licensed Professional Engineers.</p>
+			<p><a href="tel:+15599428825">(559) 942-8825</a><br />
+			<a href="mailto:projects@phase-eng.com">projects@phase-eng.com</a><br />
+			Visalia, California</p>
+		</div>
+		<div>
+			<h2>Services</h2>
+			<ul>
+				<li><a href="/services/arc-flash-study/">Arc flash study</a></li>
+				<li><a href="/services/short-circuit-study/">Short circuit study</a></li>
+				<li><a href="/services/coordination-study/">Coordination study</a></li>
+				<li><a href="/services/nfpa-70e-training/">NFPA 70E training</a></li>
+				<li><a href="/services/power-factor-correction/">Power factor correction</a></li>
+				<li><a href="/services/electrical-design/">Electrical design</a></li>
+			</ul>
+		</div>
+		<div>
+			<h2>Areas served</h2>
+			<ul>
+				<li><a href="/arc-flash-study-visalia/">Visalia</a></li>
+				<li><a href="/arc-flash-study-fresno/">Fresno</a></li>
+				<li><a href="/arc-flash-study-bakersfield/">Bakersfield</a></li>
+				<li><a href="/arc-flash-study-sacramento/">Sacramento</a></li>
+				<li><a href="/arc-flash-study-bay-area/">Bay Area</a></li>
+				<li><a href="/arc-flash-study-los-angeles/">Los Angeles</a></li>
+				<li><a href="/arc-flash-study-tulare/">Tulare</a></li>
+				<li><a href="/arc-flash-study-hanford/">Hanford</a></li>
+				<li><a href="/arc-flash-study-porterville/">Porterville</a></li>
+			</ul>
+		</div>
+		<div>
+			<h2>Company</h2>
+			<ul>
+				<li><a href="/about/">About</a></li>
+				<li><a href="/arc-flash-study-process/">How an arc flash study works</a></li>
+				<li><a href="/projects/">Projects our engineers have led</a></li>
+				<li><a href="/contact/">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="legal">
+		<span>&copy; 2026 Phase Engineering. Serving Visalia &middot; Fresno &middot; Bakersfield &middot; <a href="/arc-flash-study-tulare/">Tulare</a> &middot; <a href="/arc-flash-study-hanford/">Hanford</a> &middot; <a href="/arc-flash-study-porterville/">Porterville</a> &middot; Madera &middot; Merced &middot; Modesto &middot; Stockton &middot; Sacramento &middot; Salinas &middot; Santa Maria &middot; Ontario &middot; Los Angeles.</span>
+		<span>Visalia, California</span>
+	</div>
+</footer>
+</body>
+</html>
